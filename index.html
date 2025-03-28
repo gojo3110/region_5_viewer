@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Region 5 Viewer</title>
-    <script src="openseadragon/openseadragon.min.js"></script>
-    <style>
-        #openseadragon {
-            width: 100%;
-            height: 90vh;
-        }
-    </style>
+  <title>Region 5 Viewer</title>
+  <script src="openseadragon/openseadragon.min.js"></script>
+  <style>
+    #openseadragon {
+      width: 100%;
+      height: 600px;
+    }
+  </style>
 </head>
 <body>
+  <h2>Region 5 Viewer</h2>
+  <div id="openseadragon"></div>
 
-<h1>Region 5 Viewer</h1>
-<div id="openseadragon"></div>
-
-<script>
+  <script>
     var viewer = OpenSeadragon({
-        id: "openseadragon",
-        prefixUrl: "openseadragon/images/", // Correct path
-        tileSources: "region_5.dzi"  // Your DZI file
+      id: "openseadragon",
+      prefixUrl: "openseadragon/images/",
+      tileSources: "region_5.dzi"
     });
-</script>
-
+  </script>
 </body>
 </html>
