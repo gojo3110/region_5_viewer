@@ -1,0 +1,3 @@
+AddType application/xml .dzi
+AddType image/jpeg .jpg
+AddType image/jpeg .jpeg
